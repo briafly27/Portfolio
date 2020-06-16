@@ -1,0 +1,406 @@
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+/**********************SCROLLBAR*************************/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #3f3f44;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fdcb9e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #cceabb;
+}
+
+/***********************NAVBAR***************************/
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+    background: #3f3f44;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li a:link {
+    margin: 0 20px;
+    color: #cceabb;
+    font-size: 1.5rem;
+    padding: 0 auto;
+    text-shadow: .5px .5px black;
+    text-decoration: none;
+}
+
+nav li a:visited {
+    color: #cceabb;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #fdcb9e;
+    text-decoration: underline;
+    text-decoration-color: #cceabb;
+}
+
+/*******************WELCOME SECTION***********************/
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: #3f3f44;
+    background: #f7f7f7;
+    font-family: 'Indie Flower', cursive;
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+    margin: 5px 0;
+    text-shadow: 2px 2px #fdcb9e;
+    font-weight: 900;
+}
+
+#welcome-section p {
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 1px 1px #fdcb9e;
+}
+
+/******************************PROJECTS SECTION*******************/
+
+#projects {
+    background: #3F3F44;
+    color: #f7f7f7;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+}
+
+#projects h2 {  
+    text-shadow: 1px 1px #fdcb9e;
+    text-align: center;
+    padding: 60px;
+}
+
+.projects-grid {
+    background-color: #fdcb9e;
+    box-shadow: 5px 8px black;
+    border-radius: 10px;
+    padding: 4%;
+    min-width: 305px;
+}
+
+.projects-grid:hover {
+    background-color: #cceabb;
+    box-shadow: 7px 10px black;
+}
+
+.projects-grid a {
+    text-decoration: none;
+    color: #3f3f44;
+    text-shadow: 1px 1px #cceabb;
+}
+
+.project-image {
+    height: 100%;
+    max-height: 170px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid #cceabb;
+    display: flex;
+    margin: 0 auto;
+}
+
+.project-image:hover {
+    border: 3px solid #fdcb9e;
+}
+  
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    margin: 0;
+    text-align: center;
+}
+
+/******************************CERTIFICATIONS SECTION*******************/
+
+#certifications {
+    background: #fdcb9e;
+    color: #3f3f44;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+#certifications h2 {
+    text-shadow: 1px 1px #cceabb;
+    text-align: center;
+    padding: 60px;
+}
+
+.certifications-grid {
+    background-color: #cceabb;
+    box-shadow: 5px 8px black;
+    border-radius: 10px;
+    padding: 4%;
+    min-width: 297px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.certifications-grid:hover {
+    background-color: #fdcb9e;
+    box-shadow: 7px 10px black;
+}
+
+.certifications-grid a {
+    text-decoration: none;
+    color: #3f3f44;
+    text-shadow: 1px 1px #fdcb9e;
+}
+
+.certificate-image {
+    height: 158px;
+    max-height: 162px;
+    width: 100%;
+    max-width: 339px;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid #fdcb9e;
+    display: block;
+    margin: auto;
+}
+
+.certificate-image:hover {
+    border: 3px solid #cceabb;
+}
+  
+.certificate-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 0;
+    padding-top: 8px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+/******************************CONTACT SECTION*******************/
+
+#contact {
+    background: #cceabb;
+    color: #3f3f44;
+    text-align: center;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+}
+
+#contact .row {
+    margin: 0;
+}
+
+.contact h2 {
+    padding-top: 170px;
+}
+
+.contact h3 {
+    margin: 15px auto;
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight: 300;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #f7f7f7;
+    width: 35%;
+}
+
+.contact-links {
+    margin: 20% 0 70%;
+    padding: 0;
+    min-width: 225px;
+}
+
+.col-lg-2 {
+    padding: 0;
+}
+
+.contact-links a {    
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.9rem;
+    letter-spacing: -1;
+    font-weight: 800;
+    color: #3f3f44;
+    border-bottom: 3px solid #fdcb9e;
+    border-top: 1px solid #fdcb9e;
+    border-radius: 25px;
+    padding: 0 15px;    
+    text-shadow: 1px 1px #f7f7f7;
+}
+
+.contact-details img {
+    max-width: 25px;
+}
+
+.contact-details:hover {
+    color: #fdcb9e;
+    text-shadow: 2px 2px #3f3f44;
+    border-bottom: 3px solid #3f3f44;
+    border-top: none;
+}
+
+/***********************FOOTER*******************/
+
+#footer {
+    font-size : 0.7rem;
+    padding: 3% 0 0;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #cceabb;
+}
+
+/*******************TABLET SCREEN SIZE *****************/
+
+@media (max-width:992px) {
+    h2 {
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+
+    #projects {
+        height: auto;
+        padding-bottom: 3%;
+    }
+
+    .projects-grid {
+        padding: 4% 2%;
+        margin: 1rem auto;
+        margin-top: 0;
+    }
+
+    .certifications-grid {
+        max-width: 95%;
+        margin: 1rem auto;
+        margin-top: 0;
+    }
+
+    #contact {    
+        height: 100vh;
+        padding-bottom: 2%;
+    }
+
+    #contact .row {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .contact h2 {
+        padding-top: 100px;
+    }
+
+    .contact h3 {
+        width: 50%;
+    }
+
+    .contact-links {
+        margin: 20% 3% 0;
+    }
+
+    #footer {
+        margin-top: 12%;
+    }
+}
+
+/*********************MOBILE SCREEN SIZE ****************/
+
+@media (max-width:768px) {
+    nav {
+        display: none;
+    }
+
+    #projects {
+        padding-bottom: 5%;
+    }
+
+    #projects h2 {
+        padding: 30px;
+    }
+
+    .projects-grid {
+        max-width: 60%;
+        min-width: 400px;
+    }
+
+    .certifications-grid {
+        max-width: 60%;
+        min-width: 400px;
+    }
+
+    #certifications {
+        height: auto;
+        padding-bottom: 5%;
+    }
+
+    #certifications h2 {
+        padding: 30px;
+    }
+
+    #contact {
+        padding-bottom: 1.5%;
+    }
+
+    .contact h2 {
+        padding-top: 70px;
+    }
+
+    .contact h3 {
+        width: 70%;
+    }
+
+    .contact-links {
+        margin: 1% auto;
+    }
+
+    #footer {
+        margin-top: 10%;
+    }
+}
